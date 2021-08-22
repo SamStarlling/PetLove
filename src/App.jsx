@@ -16,18 +16,18 @@ const App = () => {
   return (
     <ThemeProvider theme={light}>
       <GlobalStyles/>
-      <Router>
+        <Router>
 
-        <S.Container>
-          <Header></Header>
-          <Switch>
-            <Route exact path='/' component={Home}></Route>
-            <Route path='/Pets' component={Pets}></Route>
-            <Route path='/Contato' component={Contato}></Route>
-            <Route path='/QuemSomos' component={QuemSomos}></Route>
-          </Switch>
-        </S.Container>
-      </Router>
+          <S.Container>
+            <Header></Header>
+            <Switch>
+              <Route exact path='/' component={Home}></Route>
+              <Route path='/Pets' component={Pets}></Route>
+              <Route path='/Contato' component={Contato}></Route>
+              <Route path='/QuemSomos' component={QuemSomos}></Route>
+            </Switch>
+          </S.Container>
+        </Router>
     </ThemeProvider>
   )
 }
