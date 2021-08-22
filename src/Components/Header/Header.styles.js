@@ -24,5 +24,15 @@ export const Logo = styled.div`
 
 `
 export const Nav = styled.nav`
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 
+`
+
+export const Link = styled.a`
+  text-decoration: none;
+  color: ${props => props.theme.colors.black};
 `

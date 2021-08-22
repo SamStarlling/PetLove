@@ -10,16 +10,16 @@ const Header = (props) => {
     <S.Container>
       <S.Logo>
         <img src={ logo } alt="" />
-        <a href="#">
+        <S.Link href="#">
           <h1>Pet Love</h1>
-        </a>
+        </S.Link>
       </S.Logo>
       <S.Nav>
-        <a href="#">
-          Pets
-        </a>
-        <a href="#">Quem Somos</a>
-        <a href="#">Constato</a>
+        <S.Link href="#">
+          PETS
+        </S.Link>
+        <S.Link href="#">QUEM SOMOS</S.Link>
+        <S.Link href="#">CONTATO</S.Link>
       </S.Nav>
     </S.Container>
   )
