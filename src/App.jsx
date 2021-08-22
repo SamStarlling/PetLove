@@ -2,19 +2,26 @@ import React from 'react'; //rafce (cria o componente)
 import { ThemeProvider } from 'styled-components';
 import Contato from './Pages/Contato';
 import Home from './Pages/Home';
+import Pets from './Pages/Pets';
+import QuemSomos from './Pages/QuemSomos';
 import { GlobalStyles } from './Styles/GlobalStyles';
 import { light } from './Styles/Themes/light';
-// import Template from './Template';
+import * as S from './Styles/App.styles'
+import Header from './Components/Header';
+
 
 
 const App = () => {
   return (
     <ThemeProvider theme={light}>
       <GlobalStyles/>
-      <div>
+      <S.Container>
+        <Header></Header>
         <Home></Home>
+        <Pets></Pets>
         <Contato></Contato>
-      </div>
+        <QuemSomos></QuemSomos>
+      </S.Container>
     </ThemeProvider>
   )
 }
