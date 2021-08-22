@@ -1,0 +1,14 @@
+import React from 'react'
+
+//Import todos os componentes do './style'
+import * as S from './template.styles';
+
+const Template = () => {
+  return (
+    <S.Container>
+      Template
+    </S.Container>
+  )
+}
+
+export default  Template
