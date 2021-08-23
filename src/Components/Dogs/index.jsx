@@ -21,7 +21,7 @@ const Dogs = () => {
   }, [])
   return (
     <S.Container>
-      {!!dadosApi && apiChegou ? (dadosApi.map((item, i) => (
+      {!!dadosApi && apiChegou ? (dadosApi.map((item, j) => (
         <Card>
           <Img
           foto={item.foto} raca={item.raca}/>
